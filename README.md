@@ -21,21 +21,24 @@ with **interactive visualizations**, **real-time updates**, and a **responsive U
 
 ## 🌟 Features
 
-### 🔥 Wildfire Tracker (Interactive Map with Filters)
-- **Tracks global wildfire events** using **NASA’s EONET API**.
-- **Real-Time Interactive Map**:
-  - Uses **Leaflet.js** with **OpenStreetMap tiles**.
-  - **Custom Fire Icons** indicate wildfire locations.
-  - Clicking on a marker **shows wildfire details (name, date, coordinates)**.
-- **Advanced Filtering System**:
-  - **Filter by Year** (e.g., **2024, 2025, All**).
-  - **Filter by Month** (last **6 months** dynamically generated).
-  - **Filter by Country** (e.g., **USA, Australia, Brazil, India, etc.**).
-- **Marquee Loading Animation**:
-  - When the map loads, a **scrolling text animation** notifies users.
-- **Fully Responsive**:
-  - Works **seamlessly across all screen sizes**.
-  - **Mobile-friendly sidebar** for filters.
+### 🔥 Wildfire Tracker (Interactive Map with Filters)  
+- **Tracks global wildfire events** using **NASA’s EONET API**.  
+- **Interactive Map** powered by **Leaflet.js** with **OpenStreetMap tiles**:  
+  - Displays **fire locations** with **custom fire icons**.  
+  - **Clicking (on mobile) or hovering (on desktop)** over a fire icon reveals:  
+    - **Wildfire Name**  
+    - **Date & Time of Occurrence**  
+    - **Latitude & Longitude** (precise coordinates)  
+    - **Location (if available)**  
+- **Advanced Filtering**:  
+  - **Filter by Year** (e.g., **2024, 2025, All**).  
+  - **Filter by Month** (last **6 months** dynamically generated).  
+  - **Filter by Country** (**USA, Australia, Brazil, India, etc.**).  
+- **Marquee Loading Animation** while data is being fetched.  
+- **Fully Responsive UI**:
+  - **On mobile:** Click a fire icon to view details in a pop-up.  
+  - **On desktop:** Hover over the fire icon for instant details.  
+  - Works seamlessly across **desktop, tablet, and mobile devices**.
 
 ### 🪐 Astronomy Picture of the Day (APOD) + Interactive Chatbot
 - **Fetches NASA’s Astronomy Picture of the Day** from the **APOD API**.
