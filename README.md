@@ -1,10 +1,88 @@
-# Asteroid Tracker Web Application
 
-This project is a full-stack web application that covers three main features:
+# 🚀 NASA ASTRONOMY FULL STACK  WEB APPLICATION
 
-1. **Astronomy Picture of the Day (APOD)**: Displays the picture of the day with a description fetched from NASA's APOD API. The picture and description update daily.
-2. **Asteroid Tracker**: Tracks Near-Earth Objects (NEOs) using NASA’s NEO-WS API. It allows users to view, filter, and visualize data about asteroids approaching Earth within a selected date range (up to 7 days).
-3. **Wildfire Tracker**: Uses NASA’s EONET API to display a global map of wildfires, featuring real-time data with the ability to filter events by year.
+A full-stack web application that provides insights into Near-Earth Objects (NEOs), Astronomy Pictures of the Day (APOD), and real-time wildfire tracking.
+
+---
+
+## 🌟 Features
+
+### 🔥 Wildfire Tracker (Interactive Map with Filters)
+- **Tracks global wildfire events** using **NASA’s EONET API**.
+- **Real-Time Interactive Map**:
+  - Uses **Leaflet.js** with **OpenStreetMap tiles**.
+  - **Custom Fire Icons** indicate wildfire locations.
+  - Clicking on a marker **shows wildfire details (name, date, coordinates)**.
+- **Advanced Filtering System**:
+  - **Filter by Year** (e.g., **2024, 2025, All**).
+  - **Filter by Month** (last **6 months** dynamically generated).
+  - **Filter by Country** (e.g., **USA, Australia, Brazil, India, etc.**).
+- **Marquee Loading Animation**:
+  - When the map loads, a **scrolling text animation** notifies users.
+- **Fully Responsive**:
+  - Works **seamlessly across all screen sizes**.
+  - **Mobile-friendly sidebar** for filters.
+
+### 🪐 Astronomy Picture of the Day (APOD) + Interactive Chatbot
+- **Fetches NASA’s Astronomy Picture of the Day** from the **APOD API**.
+- **Dynamic Background Image:**  
+  - The **homepage updates daily** with NASA’s latest space image.  
+  - **Brightness filter** enhances text readability.  
+- **Read More Feature:**  
+  - Users can **expand/collapse** the **APOD description** with an **animated effect**.  
+  - **Scrollable modal** for long explanations.  
+- **AI Chatbot (Powered by OpenAI)**:
+  - Users can **ask astronomy-related questions**.  
+  - **Quick Message Options**:
+    - 🔭 **Astronomy Fact**
+    - ✨ **Inspirational Space Quote**
+    - ☄️ **Asteroid Information**
+  - **Real-time AI responses**.  
+  - **Smooth scrolling & typing indicator**.  
+  - **Prevents main page scrolling when using chatbot**.  
+
+### ☄️ Asteroid Tracker (NEO Tracker)
+- Uses **NASA's NEO-WS API** to fetch asteroid data.
+- **Dynamic 3D Coverflow Card Display**:
+  - **Auto-scrolling NEO Cards** with **continuous rotation effect**.
+  - Cards **flip and rotate** using **Framer Motion**.
+- **Closest Approach Date Filter**:
+  - Filters NEOs **by their nearest approach date**.
+  - Requires selecting **Start Date** and **End Date** first.
+  - **React Toastify Notifications** if no dates are selected.
+- **Hazardous Asteroids Filter**:
+  - View only **Potentially Hazardous Asteroids** (PHAs).
+- **Interactive & Real-Time Dashboard**:
+  - **Live charts** dynamically update when filters change.
+  - **Bar, Pie, Line, Scatter, and Doughnut charts** for asteroid data.
+  - **Velocity Distribution & Closest Approach Data Graphs**.
+  - **Heatmap visualization** for size vs velocity.
+
+---
+
+## 🛠 Technologies Used
+
+### 📌 **Frontend:**
+- **React** (UI)
+- **React-Router** (Navigation)
+- **Framer Motion** (3D animations)
+- **Chart.js** (Graphs & Visualizations)
+- **Leaflet.js + React-Leaflet** (Interactive Map)
+- **React Toastify** (Notifications)
+- **Tailwind CSS** (Styling)
+- **Chatbot UI Kit** (for chat interface)
+- **React Icons** (LinkedIn, GitHub, and Portfolio links)
+
+### 📌 **Backend:**
+- **Node.js + Express.js** (Server)
+- **Axios** (API Calls)
+- **NASA APIs**:
+  - **NEO-WS API** (Asteroid Data)
+  - **APOD API** (Daily Astronomy Picture)
+  - **EONET API** (Wildfire Events)
+- **OpenAI API** (Chatbot Responses)
+
+---
 
 ## Table of Contents
 - [Features](#features)
