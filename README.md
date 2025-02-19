@@ -1,7 +1,10 @@
+# 🌌 NASA Astronomy Web Application 🚀  
 
-# 🚀 NASA ASTRONOMY FULL STACK  WEB APPLICATION
-
-A full-stack web application that provides insights into Near-Earth Objects (NEOs), Astronomy Pictures of the Day (APOD), and real-time wildfire tracking.
+A **full-stack web application** that provides insights into:  
+- **Astronomy Picture of the Day (APOD)**
+- **Near-Earth Object (NEO) Tracker**
+- **Global Wildfire Tracking**  
+with **interactive visualizations**, **real-time updates**, and a **responsive UI**.
 
 ---
 
