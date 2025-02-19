@@ -250,48 +250,88 @@ Backend: http://localhost:5000
   - **Heatmap visualization** for **size vs velocity**.
 
 ---
+# 🚀 Available Routes
 
-## Future Improvements
-1) Pagination for Large Datasets: If the NEO dataset is large, implementing pagination or infinite scrolling could improve performance.
-2) User Authentication: Allow users to save their preferences or track specific NEOs by adding user authentication.
-3) New APIs and Visualizations: Integrate additional NASA APIs and create more visualizations.
+The application provides the following routes:
 
-## Component Breakdown
-1. App.js
-Purpose: Main entry point for the React application, managing route navigation and consistent elements like the Navbar and Footer.
-2. Home.js
-Purpose: Displays the Astronomy Picture of the Day (APOD) on the homepage.
-Responsibilities: Fetches the daily picture and description using the APOD API.
-3. AsteroidTracker.js
-Purpose: Main component for tracking Near-Earth Objects (NEOs).
-Responsibilities: Fetches NEO data, integrates filters, and visualizes asteroid data.
-4. DatePicker.js
-Purpose: Allows users to select a date range for filtering NEO data.
-5. NeoFilters.js
-Purpose: Filters NEOs based on their approach date and hazardous status.
-6. NeoCard.js
-Purpose: Displays details of individual NEOs, including size and approach date.
-7. NeoCardContainer.js
-Purpose: A carousel-like container for navigating between NEO cards.
-8. NeoChart.js
-Purpose: Renders charts visualizing NEO data using Chart.js.
-9. NeoDetails.js
-Purpose: Displays detailed information about a selected NEO in a modal.
-10. NeoList.js
-Purpose: Renders a list of filtered NEOs using NeoCardContainer.
-11. Map.js
-Purpose: Displays wildfire events on an interactive map using Leaflet.js.
-12. Navbar.js
-Purpose: Provides navigation links to different routes in the application.
-13. Footer.js
-Purpose: Displays a footer with information about the app.
-Backend Components
-14. server.js
-Purpose: Main entry point for the backend, setting up the Express server and defining API routes for NEO, EONET, and APOD data.
-15. apodRoutes.js, eonetRoutes.js, neoRoutes.js
-Purpose: These route files handle API requests from the frontend and fetch data from NASA’s APIs.
-16. apodController.js, eonetController.js, neoController.js
-Purpose: Controllers for handling the actual logic for interacting with NASA's APIs using Axios.
-17. .env
-Purpose: Stores sensitive data like the NASA API key, keeping it out of the source code
+| **Route**               | **Description** |
+|-------------------------|----------------|
+| `/`                     | Home - Displays Astronomy Picture of the Day (APOD) & Chatbot. |
+| `/asteroidtracker`      | Near-Earth Object (NEO) Tracker with filters and visualizations. |
+| `/map`                  | Global Wildfire Map (EONET API) for tracking wildfire events. |
 
+---
+
+# 🔮 Future Improvements
+
+We are continuously working on improving the application. Here are some planned enhancements:
+
+✅ **Pagination & Infinite Scrolling**: Improve performance for large NEO datasets.  
+✅ **User Authentication**: Allow users to save preferences and track specific NEOs.  
+✅ **Additional NASA APIs**: Integrate more NASA APIs such as Exoplanet Discovery and Space Weather.  
+✅ **Dark Mode Support**: Enhance UI accessibility with a dark mode toggle.  
+✅ **Save & Compare Feature**: Enable users to save asteroid data and compare NEOs over time.  
+✅ **Extended Chatbot Capabilities**: Allow chatbot to answer more space-related queries with **OpenAI fine-tuned responses**.  
+
+---
+
+# 🏗 Component Breakdown
+
+## 🌟 **Frontend Components**
+| **Component**          | **Purpose** |
+|-----------------------|-------------|
+| `App.js`             | Main entry point for the React application, managing route navigation and shared elements like the Navbar and Footer. |
+| `Home.js`            | Displays Astronomy Picture of the Day (APOD) with chatbot integration. Fetches daily images from NASA’s APOD API. |
+| `AsteroidTracker.js` | Main component for tracking Near-Earth Objects (NEOs). Fetches NEO data, applies filters, and visualizes asteroid insights. |
+| `DatePicker.js`      | Allows users to select a date range for filtering NEO data. |
+| `NeoFilters.js`      | Filters NEOs based on their approach date and hazardous status. |
+| `NeoCard.js`        | Displays individual NEOs with details like size, velocity, and closest approach date. |
+| `NeoCardContainer.js` | A carousel-style container for navigating between NEO cards. |
+| `NeoChart.js`       | Renders data visualizations (Bar, Pie, Line, Scatter, Doughnut) using **Chart.js**. |
+| `NeoDetails.js`     | Displays detailed information about a selected NEO in a modal view. |
+| `NeoList.js`        | Lists and renders filtered NEOs using `NeoCardContainer.js`. |
+| `Map.js`            | Displays wildfire events on an interactive world map using **Leaflet.js**. |
+| `Navbar.js`         | Provides navigation links to different routes in the application. |
+| `Footer.js`         | Displays footer content with project and developer details. |
+
+---
+
+## ⚙️ **Backend Components**
+| **File**               | **Purpose** |
+|------------------------|-------------|
+| `server.js`           | Main entry point for the backend, setting up **Express.js server** and managing API endpoints. |
+| `apodRoutes.js`       | Handles requests related to NASA's **APOD API** to fetch the Astronomy Picture of the Day. |
+| `eonetRoutes.js`      | Fetches wildfire event data from NASA’s **EONET API** and serves it to the frontend. |
+| `neoRoutes.js`        | Manages API calls related to Near-Earth Objects (NEOs) using NASA’s **NEO-WS API**. |
+| `chatbotRoutes.js`    | Routes chatbot interactions and connects with **OpenAI API** to generate responses. |
+
+### 🔍 **Controllers**
+| **File**                | **Purpose** |
+|-------------------------|-------------|
+| `apodController.js`    | Fetches **Astronomy Picture of the Day (APOD)** and formats data for the frontend. |
+| `eonetController.js`   | Handles **wildfire event tracking** and processes data from NASA’s EONET API. |
+| `neoController.js`     | Manages fetching and processing of **NEO data**, including filtering and hazardous asteroid tracking. |
+| `chatbotController.js` | Manages AI chatbot responses using **OpenAI’s GPT API**, providing real-time astronomy insights. |
+
+---
+
+# 🚀 **Full NASA App Deployment**
+The application has been **fully deployed**, allowing users to explore:
+- **Live asteroid tracking** via NASA’s NEO-WS API.
+- **Daily space images** from APOD.
+- **Wildfire monitoring** using EONET API.
+- **An AI chatbot** that provides astronomy insights.
+
+**Stay tuned for future enhancements!** 🚀
+
+---
+
+## 🔐 **Environment Variables & API Keys**
+For the application to work, ensure that your `.env` file (in the `backend` directory) contains:
+
+```env
+# NASA API Key for fetching space data
+NASA_API_KEY=your-nasa-api-key
+
+# OpenAI API Key for AI chatbot responses
+OPENAI_API_KEY=your-openai-api-key
