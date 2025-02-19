@@ -175,23 +175,68 @@ Now the application should be running on:
 
 Frontend: http://localhost:5173
 Backend: http://localhost:5000
-## Using the Application
-Once the application is running, you can access different features from the navigation bar.
 
-1. NEO Tracker
-Selecting a Date Range: Use the date picker to select a start and end date to fetch Near-Earth Object data for that period.
-Filtering by Hazardous Status: You can filter NEOs that are marked as potentially hazardous by selecting the checkbox.
-Viewing Data: NEO data will be displayed as cards. You can also visualize asteroid size, hazardous status, and speed in charts.
-Detailed View: Click on individual NEOs to see more detailed information like size, closest approach date, and miss distance.
-2. Wildfire Tracker
-Viewing Global Events: Navigate to the Map page to view wildfire events on a global map.
-Event Markers: Hover on wildfire markers to see detailed information about the event, including the date, location, and category.
-Available Routes
-The following routes are available in the application:
+## 🚀 Using the Application
 
-Home Page (/): Displays the Astronomy Picture of the Day and its description using NASA’s APOD API.
-Asteroid Tracker (/asteroidtracker): Allows users to filter and visualize NEO data, including charts for NEO size, hazardous status, and max diameter.
-Map Page (/map): Displays a map of global wildfire events using NASA’s EONET API.
+### 🔥 Wildfire Tracker (Interactive Map with Filters)
+- **Tracks global wildfire events** using **NASA’s EONET API**.
+- **Real-Time Interactive Map**:
+  - Uses **Leaflet.js** with **OpenStreetMap tiles**.
+  - **Custom Fire Icons** indicate wildfire locations.
+  - Clicking on a marker **shows wildfire details**:
+    - **Name**
+    - **Date**
+    - **Geographical coordinates**.
+- **Advanced Filtering System**:
+  - **Filter by Year** (e.g., **2024, 2025, All**).
+  - **Filter by Month** (last **6 months dynamically generated**).
+  - **Filter by Country** (e.g., **USA, Australia, Brazil, India, etc.**).
+- **Marquee Loading Animation**:
+  - When the map loads, a **scrolling text animation** notifies users.
+- **Fully Responsive**:
+  - Works **seamlessly across all screen sizes**.
+  - **Mobile-friendly sidebar** for easy filtering.
+
+---
+
+### 🪐 Astronomy Picture of the Day (APOD) + Interactive Chatbot
+- **Fetches NASA’s Astronomy Picture of the Day** from the **APOD API**.
+- **Dynamic Background Image**:
+  - The **homepage updates daily** with NASA’s **latest space image**.
+  - **Brightness filter** enhances text readability.
+- **Read More Feature**:
+  - Users can **expand/collapse** the **APOD description** with an **animated effect**.
+  - **Scrollable modal** for long explanations.
+- **AI Chatbot (Powered by OpenAI)**:
+  - Users can **ask astronomy-related questions**.
+  - **Quick Message Options**:
+    - 🔭 **Astronomy Fact**
+    - ✨ **Inspirational Space Quote**
+    - ☄️ **Asteroid Information**
+  - **Real-time AI responses**.
+  - **Smooth scrolling & typing indicator**.
+  - **Prevents main page scrolling when using chatbot**.
+
+---
+
+### ☄️ Asteroid Tracker (NEO Tracker)
+- Uses **NASA's NEO-WS API** to **fetch asteroid data**.
+- **Dynamic 3D Coverflow Card Display**:
+  - **Auto-scrolling NEO Cards** with **continuous rotation effect**.
+  - **Cards flip and rotate smoothly** using **Framer Motion**.
+- **Closest Approach Date Filter**:
+  - Filters NEOs **by their nearest approach date**.
+  - **Requires selecting Start Date and End Date first**.
+  - **React Toastify Notifications** if no dates are selected.
+- **Hazardous Asteroids Filter**:
+  - View only **Potentially Hazardous Asteroids (PHAs)**.
+- **Interactive & Real-Time Dashboard**:
+  - **Live charts dynamically update when filters change**.
+  - **Bar, Pie, Line, Scatter, and Doughnut charts** for asteroid data.
+  - **Velocity Distribution & Closest Approach Data Graphs**.
+  - **Heatmap visualization** for **size vs velocity**.
+
+---
 
 ## Future Improvements
 1) Pagination for Large Datasets: If the NEO dataset is large, implementing pagination or infinite scrolling could improve performance.
