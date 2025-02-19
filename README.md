@@ -261,17 +261,58 @@ The application provides the following routes:
 | `/map`                  | Global Wildfire Map (EONET API) for tracking wildfire events. |
 
 ---
+## 📌 Future Improvements  
+The **Asteroid Tracker Web Application** is already packed with powerful features, but there’s always room for enhancement. Below are some planned improvements:
 
-# 🔮 Future Improvements
+### 🚀 1. Pagination & Infinite Scrolling for Large Datasets  
+- **Issue:** Currently, all asteroid data for the selected range is loaded at once.  
+- **Solution:** Implement **pagination** or **infinite scrolling** to optimize performance and improve user experience.  
 
-We are continuously working on improving the application. Here are some planned enhancements:
+### 🔐 2. User Authentication & Preferences Storage  
+- **Allow users to:**  
+  - Save their **favorite NEOs**.  
+  - Customize **filters & dashboard views**.  
+  - Track specific asteroids over time.  
+- **Implementation:** Integrate **Firebase/Auth0** for authentication and use **MongoDB/PostgreSQL** to store user data.  
 
-✅ **Pagination & Infinite Scrolling**: Improve performance for large NEO datasets.  
-✅ **User Authentication**: Allow users to save preferences and track specific NEOs.  
-✅ **Additional NASA APIs**: Integrate more NASA APIs such as Exoplanet Discovery and Space Weather.  
-✅ **Dark Mode Support**: Enhance UI accessibility with a dark mode toggle.  
-✅ **Save & Compare Feature**: Enable users to save asteroid data and compare NEOs over time.  
-✅ **Extended Chatbot Capabilities**: Allow chatbot to answer more space-related queries with **OpenAI fine-tuned responses**.  
+### 📊 3. More NASA APIs & Data Integrations  
+- **Expand the application with additional space-related data:**  
+  - **Exoplanet Exploration API** – View planets outside our solar system.  
+  - **Mars Rover Photos API** – Fetch the latest images from Mars rovers.  
+  - **NASA Weather Data** – Get real-time space weather insights.  
+
+### 🌓 4. Dark Mode Support  
+- **Current State:** The UI follows a light-themed design.  
+- **Future Update:** Add a **toggle button** for **Dark Mode** using Tailwind CSS dark mode utilities.  
+
+### 📅 5. Calendar-Based NEO Selection  
+- **Enhancement:** Improve date selection by integrating a **calendar-based UI** instead of a manual date picker.  
+- **Goal:** Provide a more user-friendly experience when selecting a date range.  
+
+### 🌍 6. Multi-Language Support  
+- **Why?** Expand accessibility for a global audience.  
+- **How?** Implement **i18n (Internationalization)** with language options like **English, Spanish, French, Hindi, etc.**  
+
+### 📡 7. Live NEO Tracking & Push Notifications  
+- **Real-Time Alerts:** Allow users to set alerts when **a potentially hazardous asteroid** is approaching Earth.  
+- **Implementation:** Use **WebSockets or Firebase Cloud Messaging (FCM)** to push notifications.  
+
+### 🎨 8. Improved 3D Visualizations  
+- **Upgrade:** Enhance the **3D coverflow effect** with **Three.js or D3.js** for better asteroid visualizations.  
+- **Goal:** Provide a more immersive and interactive way to explore asteroid data.  
+
+### 📍 9. Asteroid Impact Simulation  
+- **New Feature:** A **simulation tool** where users can input an asteroid’s size & velocity to see potential impact scenarios.  
+- **Visualization:** Use **real-time physics-based models** to simulate impact effects.  
+
+### 🧠 10. AI-Powered Asteroid Predictions  
+- **Machine Learning Integration:**  
+  - Use historical asteroid data to **predict future NEO approaches**.  
+  - Display **risk assessment scores** to indicate potential asteroid threats.  
+- **Implementation:** Train an AI model on past NEO data and visualize **predicted asteroid trajectories**.  
+
+These improvements will significantly enhance the **user experience, scalability, and real-time insights** of the Asteroid Tracker Application. 🚀✨  
+
 
 ---
 
