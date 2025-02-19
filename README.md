@@ -5,6 +5,17 @@ A full-stack web application that provides insights into Near-Earth Objects (NEO
 
 ---
 
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Using the Application](#using-the-application)
+- [Available Routes](#available-routes)
+- [Future Improvements](#future-improvements)
+- [Component Breakdown](#component-breakdown)
+
+
 ## 🌟 Features
 
 ### 🔥 Wildfire Tracker (Interactive Map with Filters)
@@ -84,15 +95,6 @@ A full-stack web application that provides insights into Near-Earth Objects (NEO
 
 ---
 
-## Table of Contents
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
-- [Using the Application](#using-the-application)
-- [Available Routes](#available-routes)
-- [Future Improvements](#future-improvements)
-- [Component Breakdown](#component-breakdown)
 
 ---
 
@@ -108,18 +110,6 @@ A full-stack web application that provides insights into Near-Earth Objects (NEO
 
 ---
 
-## Technologies Used
-
-- **React**: For building the user interface.
-- **React-Router**: For handling navigation between different pages.
-- **Tailwind CSS**: For styling and designing the user interface.
-- **Chart.js**: For creating charts such as Bar, Line, Pie, and Scatter Plots.
-- **Leaflet.js**: A JavaScript library for interactive maps, used with the `react-leaflet` library.
-- **Node.js** & **Express.js**: For setting up the backend server and handling API requests.
-- **NEO API**: NASA’s Near-Earth Object Web Service API, used for fetching asteroid data.
-- **APOD API**: NASA’s Astronomy Picture of the Day API, used to fetch the daily picture and description.
-- **EONET API**: NASA’s Earth Observatory Natural Event Tracker API, used to fetch wildfire data across the globe.
-- **Axios**: For making HTTP requests to NASA’s APIs.
 
 ---
 
@@ -134,7 +124,7 @@ A full-stack web application that provides insights into Near-Earth Objects (NEO
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/asteroid-tracker.git
+   git clone https://github.com/your-username/NASA_ASTRONOMY_APP.git
 Install frontend and backend dependencies: You will need to install the required packages in both the frontend and backend directories.
 
 # Asteroid Tracker Web Application
