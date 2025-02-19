@@ -101,15 +101,44 @@ with **interactive visualizations**, **real-time updates**, and a **responsive U
 
 ---
 
-## Features
+## 🌟 Features  
 
-1. **Astronomy Picture of the Day (APOD)**: Displays the picture of the day and its description on the home screen using the APOD API.
-2. **NEO Data**: Fetches and displays Near-Earth Objects approaching Earth using the NEO-WS API.
-3. **Asteroid Visualization**: Displays charts (Bar, Pie, Line, and Scatter) showing asteroid size, hazardous status, and maximum diameter.
-4. **Filters**: Allows users to filter NEO data by the nearest approach date and hazardous state.
-5. **Background Image Carousel**: Automatically changes the background image on the homepage.
-6. **Interactive Map**: Displays wildfire events on a world map using Leaflet.js. When the user hovers over the wildfire icons, a dialog box shows the title, location, and full date of the event.
-7. **Responsive Design**: The app is fully responsive, adapting to different screen sizes across devices.
+### 🪐 Astronomy Picture of the Day (APOD)  
+- Fetches and displays the **daily astronomy image** from **NASA's APOD API**.  
+- Includes a **detailed description** explaining the significance of the image.  
+- Updates automatically **every 24 hours**.  
+
+### ☄️ Near-Earth Object (NEO) Data  
+- Retrieves real-time data on **asteroids approaching Earth** using **NASA’s NEO-WS API**.  
+- Displays key details such as **size, velocity, approach date, and hazardous status**.  
+
+### 📊 Asteroid Data Visualization  
+- Provides **interactive charts** to analyze asteroid properties:  
+  - **Bar Chart** – Compares asteroid sizes.  
+  - **Pie Chart** – Highlights hazardous vs. non-hazardous asteroids.  
+  - **Line Chart** – Tracks asteroid size variations over time.  
+  - **Scatter Plot** – Displays asteroid **size vs. velocity** for pattern analysis.  
+
+### 🎯 Advanced Filtering System  
+- **Closest Approach Date Filter** – Users can filter NEOs by their **nearest approach date** within a **7-day range**.  
+- **Hazardous Status Filter** – View only **potentially hazardous asteroids** for better risk assessment.  
+- **Real-time updates**: Filtering dynamically updates the displayed asteroid data and charts.  
+
+### 🌌 Dynamic Background Image Carousel  
+- The homepage features a **rotating background image** that updates automatically **every 5 seconds**.  
+- Creates an immersive space-themed experience with high-quality images.  
+
+### 🌍 Interactive Wildfire Tracker  
+- Uses **NASA’s EONET API** to **map wildfire events across the globe**.  
+- **Leaflet.js Interactive Map:**  
+  - Displays wildfire locations with **hover tooltips** for details.  
+  - Clicking an event provides **full information**, including **title, location, and event date**.  
+
+### 📱 Fully Responsive & Mobile-Friendly  
+- **Seamless experience** across **all devices** (desktop, tablet, mobile).  
+- UI adapts to different screen sizes **without compromising usability**.  
+- **Optimized for performance** to ensure smooth rendering across platforms.  
+
 
 ---
 
