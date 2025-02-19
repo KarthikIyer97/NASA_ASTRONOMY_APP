@@ -148,6 +148,10 @@ This project uses NASA’s APIs, so you need to obtain an API key.
 
 Visit NASA API and sign up to get an API key.
 After obtaining your key, create a .env file in the root of the backend directory:
+```bash
+NASA_API_KEY=your-nasa-api-key
+```
+
 
 ### OpenAI API Key Setup (For Chatbot)
 Get an API Key:
@@ -157,11 +161,8 @@ Generate a new API key from the API settings.
 Add the OpenAI API key to your .env file in the backend directory:
 
 .env file
-
-OPENAI_API_KEY=your-openai-api-key
-
 ```bash
-NASA_API_KEY=your-nasa-api-key
+OPENAI_API_KEY=your-openai-api-key
 ```
 ### Running the Application
 To run the application, follow these steps:
